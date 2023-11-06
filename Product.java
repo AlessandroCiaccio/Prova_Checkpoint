@@ -43,5 +43,9 @@ public class Product {
         this.quantity = quantity;
     }
 
-    public static void printManifacturerFirstLetters()
+    public static void printManifacturerFirstLetters(Product[] products){
+        for(Product product : products){
+            System.out.println(product.manufacturer.charAt(0));
+        }
+    }
 }
